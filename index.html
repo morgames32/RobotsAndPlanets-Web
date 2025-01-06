@@ -10,14 +10,14 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: url('gameSelect.png') no-repeat center center fixed;
+      background: url('background.jpg') no-repeat center center fixed;
       background-size: cover;
       color: white;
-      text-align: center;
     }
     header {
       background-color: rgba(0, 0, 0, 0.7);
       padding: 20px;
+      text-align: center;
     }
     header h1 {
       font-size: 3rem;
@@ -37,27 +37,44 @@
       color: #ff9900;
     }
     main {
-      margin: 50px auto;
-      max-width: 800px;
-      padding: 20px;
+      margin: 20px auto;
+      max-width: 1200px;
+    }
+    section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 50px 0;
       background: rgba(0, 0, 0, 0.8);
+      padding: 20px;
       border-radius: 10px;
       box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     }
-    main h2 {
-      font-size: 2rem;
+    section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    section img {
+      max-width: 45%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    }
+    section div {
+      max-width: 45%;
+      text-align: left;
+    }
+    section h2 {
+      font-size: 1.8rem;
       margin-bottom: 15px;
     }
-    main p {
+    section p {
       font-size: 1.1rem;
       line-height: 1.6;
     }
     footer {
       background-color: rgba(0, 0, 0, 0.7);
       padding: 10px 0;
-      position: absolute;
-      width: 100%;
-      bottom: 0;
+      text-align: center;
+      position: relative;
     }
     footer p {
       font-size: 0.9rem;
@@ -83,26 +100,52 @@
   </header>
   <main>
     <section id="about">
-      <h2>About the Game</h2>
-      <p>
-        Stellar Odyssey is an action-packed 2D platformer that takes you on an interstellar adventure
-        across unique planets. Fight epic bosses, solve puzzles, and collect artifacts to save the
-        galaxy from the encroaching darkness.
-      </p>
+      <div>
+        <h2>About the Game</h2>
+        <p>
+          Stellar Odyssey is an action-packed 2D platformer that takes you on an interstellar adventure across unique planets. Fight epic bosses, solve puzzles, and collect artifacts to save the galaxy from darkness.
+        </p>
+      </div>
+      <img src="about-gif.gif" alt="About Stellar Odyssey">
     </section>
-    <section id="features">
-      <h2>Features</h2>
-      <ul>
-        <li>Vibrant visuals inspired by games like Donkey Kong Tropical Freeze and Rayman Legends.</li>
-        <li>Challenging gameplay with creative levels and mechanics.</li>
-        <li>Epic soundtrack and immersive sound effects.</li>
-        <li>Available on <a href="https://store.steampowered.com" target="_blank">Steam</a>.</li>
-      </ul>
+
+    <section>
+      <img src="gameplay1.gif" alt="Gameplay GIF 1">
+      <div>
+        <h2>Dynamic Gameplay</h2>
+        <p>
+          Experience fluid movement and tight controls as you traverse challenging levels. Each planet offers unique mechanics to keep you on your toes.
+        </p>
+      </div>
     </section>
+
+    <section>
+      <div>
+        <h2>Epic Boss Fights</h2>
+        <p>
+          Test your skills against massive, screen-filling bosses with unique attack patterns. Victory will require strategy and precision.
+        </p>
+      </div>
+      <img src="bossfight-gif.gif" alt="Boss Fight GIF">
+    </section>
+
+    <section>
+      <img src="puzzle-gif.gif" alt="Puzzle Gameplay GIF">
+      <div>
+        <h2>Puzzles and Exploration</h2>
+        <p>
+          Solve intricate puzzles and uncover hidden paths. Exploration is rewarded with powerful upgrades and collectibles.
+        </p>
+      </div>
+    </section>
+
     <section id="contact">
-      <h2>Contact</h2>
-      <p>If you have any questions or want to reach out, feel free to email me at:</p>
-      <p><a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <div>
+        <h2>Contact</h2>
+        <p>If you have any questions or want to reach out, feel free to email me at:</p>
+        <p><a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      </div>
+      <img src="contact-gif.gif" alt="Contact Graphic">
     </section>
   </main>
   <footer>
